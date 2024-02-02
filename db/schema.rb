@@ -39,14 +39,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_02_014550) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.text "body"
-    t.string "commentable_type", null: false
-    t.integer "commentable_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["commentable_type", "commentable_id"], name: "index_comments_on_commentable"
-  end
+  # create_table "comments", force: :cascade do |t|
+  #   t.text "body"
+  #   t.string "commentable_type", null: false
+  #   t.integer "commentable_id", null: false
+  #   t.datetime "created_at", null: false
+  #   t.datetime "updated_at", null: false
+  #   t.index ["commentable_type", "commentable_id"], name: "index_comments_on_commentable"
+  # end
 
   create_table "patients", force: :cascade do |t|
     t.string "name"
